@@ -1,0 +1,140 @@
+html{
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+a{
+  color: seashell;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 5;
+  height: 69px;
+  width: 100%;
+  order: -1;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+  margin-top: -10px;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo{
+  height: 50px;
+  margin-left: 10px;
+}
+
+.links span{
+  margin: 0px 10px;
+}
+
+/* Body */
+
+.body1{
+  height: 700px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+}
+
+.body1 .text, .subheading{
+  width: 1200px;
+  height: 140px;
+}
+
+.text{
+  background-color: black;
+}
+
+.body2{
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+}
+
+.items{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image_1, .image_2, .image_3, .image_4, .image_5{
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+}
+
+.items h4{
+  margin-top: 0px;
+}
+
+.body3{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  height: 500px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.body3 h2{
+  margin-top: 100px;
+}
+
+.locations{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 1;
+}
+
+.location_1, .location_2, .location_3{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  margin: 15px 40px;
+}
+
+.body3 span{
+  margin-bottom: 15px;
+}
+
+footer{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#copy{
+  align-self: flex-start;
+  margin-left: 20px;
+}
