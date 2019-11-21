@@ -31,7 +31,13 @@ html, body{
 }
 
 .heading-sm{
-    color: honeydew;
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 200%;
+    text-shadow: 1px 1px 1px black;
 }
 
 .parallax1{
@@ -82,4 +88,9 @@ p{
     .col>p{
         text-align: center;
     }
+
+    .parallax1, .parallax2, .parallax3, .parallax4{
+    background-attachment: scroll;
+    }
+
 }
