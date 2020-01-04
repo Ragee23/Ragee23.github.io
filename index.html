@@ -4,73 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Turtle Game</title>
-    <style>
-    .turt{
-        position: relative;
-        --x: 0;
-        --y: 0;
-        --rotate: 0;
-        --rotateY: 0;
-        transform: translateX(var(--x)) translateY(var(--y)) rotateY(var(--rotateY)) rotate(var(--rotate)); 
-        transition: transform 0.2s;
-    };
-    
-    /* body {
-        background-color: lightblue;
-    } */
-    
-    </style>
-
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Personal Portfolio</title>
 </head>
-<body style="background-image: url('bg.jpg'); background-position: center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover;">
+<body>
+    <header>
+        <a href="index.html" class="header-brand">Ragulan</a>
+        <nav>
+            <ul>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="header-cases">Cases</a>
+        </nav>
+    </header>
 
-    <img src="turtle.png" width ='200' alt="Turt" class="turt">
+    <main>
+        <section class="index-banner">
+            <h1> I am a freelance web<br>developer</h1>
+            <h2>Working with HTML5, CSS3, Javascript, PHP, and MySQL</h2>
+        </section>    
+        <div class="wrapper">
+            <section class="index-links">
+                <a href="#" class="index-boxlink-square">    
+                    <div>
+                        <h3>Cases</h3>
+                    </div>
+                </a>
+                <a href="#" class="index-boxlink-rectangle">
+                    <div>
+                        <h3>Portfolio</h3>
+                    </div>
+                </a>
+                <a href="#" class="index-boxlink-square">
+                    <div>
+                        <h3>Ragulan</h3>
+                    </div>
+                </a>
+                <a href="#" class="index-boxlink-rectangle">
+                    <div>
+                        <h3>Youtube Channel</h3>
+                    </div>
+                </a>
+                <a href="#" class="index-boxlink-square">
+                    <div>
+                        <h3>About</h3>
+                    </div>
+                </a>
+                <a href="#" class="index-boxlink-square">
+                    <div>
+                    <h3>Contact</h3>
+                    </div>
+                </a>
+            </section>
+        </div>
+        </main>
 
-    <Script>
-    const turtle = document.querySelector('.turt');
-    let x = 0;
-    let y = 0;
-    const speed = 50;
-    let rotateY = 0;
-    let rotate = 0;
-
-    function handleKeyDown(event){
-        if (!event.key.includes('Arrow')){ return }
-        console.log(event.key);
-        switch (event.key){
-            case 'ArrowUp':
-                y = y - 1;
-                rotate = -90;
-                break;
-            case 'ArrowRight': //Perfect
-                x = x + 1;
-                rotate = 0;
-                rotateY = 0;
-                break;
-            case 'ArrowDown':
-                y = y + 1;
-                rotate = 90;
-                break;
-            case 'ArrowLeft': //Pefect
-                x = x - 1;
-                rotate = 0;
-                rotateY = 180;
-                break;     
-        default:
-            console.log('That is not a valid move');
-                break;
-        }
-        turtle.setAttribute('style', `
-        --x: ${x * speed}px; 
-        --y: ${y * speed}px; 
-        --rotateY: ${rotateY}deg;
-        --rotate: ${rotate}deg;
-        `);
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-
-    </Script>
+        <footer>
+            <div class="wrapper">
+                <ul class="footer-links-main">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Cases</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">About Me</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <ul class="footer-links-cases">
+                    <li><p>Latest Cases:</p></li>
+                    <li><a href="">Etch-a-Sketch - Javascript</a></li>
+                    <li><a href="">Run Away Turtle - Javascript</a></li>
+                    <li><a href="">Third Case</a></li>
+                    <li><a href="">Fourth Case</a></li>
+                    <div class="footer-sm">
+                </ul>
+                <div class="footer-sm">
+                    <a href="">
+                        <img src="Instagram.png" alt="Instagram Icon">
+                    </a>
+                    <a href="">
+                        <img src="google.png" alt="G+ Icon">
+                    </a>
+                    <a href="">
+                        <img src="twitter.png" alt="Twitter Icon">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    
 </body>
 </html>
